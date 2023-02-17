@@ -1,0 +1,54 @@
+:root {
+  --spacing-1: 8px;
+  --content-max-width: 480px;
+  --border-radius: 8px;
+}
+
+body {
+  background-color: deepskyblue;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 0 calc(max(var(--spacing-1), (100vw - var(--content-max-width)) / 2));
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+button {
+  border: none;
+  padding: calc(var(--spacing-1) * 2);
+  background-color: dodgerblue;
+  color: white;
+  border-radius: var(--border-radius);
+}
+
+button:disabled {
+  background-color: rgb(101, 175, 250);
+}
+
+p {
+  padding: var(--spacing-1);
+  text-align: center;
+}
+
+.question-box {
+  margin: var(--spacing-1) 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.answer {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
